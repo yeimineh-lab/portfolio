@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Portfolio — Yei Min Eh</title>
+  <meta name="description" content="Portfolio of Yei Min Eh — projects, experience, skills, and contact information." />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header class="header">
+    <nav class="nav" aria-label="Primary navigation">
+      <a class="logo" href="#top">Yei Min Eh</a>
+
+      <button
+        class="menu-btn"
+        type="button"
+        aria-label="Open menu"
+        aria-controls="navLinks"
+        aria-expanded="false"
+      >
+        <span class="menu-icon" aria-hidden="true"></span>
+      </button>
+
+      <div class="nav-links" id="navLinks">
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#skills">Skills</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="top" class="main">
+    <section class="hero" aria-label="Introduction">
+      <div class="hero-text">
+        <h1>Hi, I’m <span class="accent">Yei Min Eh</span>.</h1>
+
+        <p class="lead">
+          I build and share projects, develop my skills, and continuously learn through hands-on experience.
+        </p>
+
+        <div class="cta">
+          <a class="button" href="#projects">View projects</a>
+          <a class="button button-ghost" href="#contact">Get in touch</a>
+        </div>
+
+        <div class="meta" aria-label="Profile links">
+          <a href="https://www.linkedin.com/in/yei-min-eh-a9289a289/" target="_blank" rel="noopener noreferrer">
+            LinkedIn
+          </a>
+          <span aria-hidden="true">•</span>
+          <a href="https://github.com/yeimineh-lab" target="_blank" rel="noopener noreferrer">
+            GitHub
+          </a>
+          <span aria-hidden="true">•</span>
+          <a href="#" rel="noopener">Download CV</a>
+        </div>
+      </div>
+
+      <aside class="hero-card" aria-label="What I do">
+        <h2>What I do</h2>
+        <ul>
+          <li>✔ Build responsive and modern web interfaces</li>
+          <li>✔ Write clean, structured, and readable code</li>
+          <li>✔ Improve fast through real projects</li>
+        </ul>
+      </aside>
+    </section>
+
+    <section id="projects" class="section">
+      <h2>Projects</h2>
+      <p class="section-sub">A selection of projects and experiments I’ve worked on.</p>
+
+      <div class="grid">
+        <article class="card">
+          <h3>Portfolio Website</h3>
+          <p>
+            A responsive personal portfolio built with HTML, CSS, and JavaScript, focused on accessibility and modern
+            layout techniques.
+          </p>
+          <div class="tags">
+            <span>HTML</span><span>CSS</span><span>JavaScript</span>
+          </div>
+          <div class="card-links">
+            <a href="https://github.com/yeimineh-lab" target="_blank" rel="noopener noreferrer">Source</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <h3>GitHub Projects</h3>
+          <p>
+            A collection of learning-based and practical repositories exploring frontend development and programming
+            fundamentals.
+          </p>
+          <div class="tags">
+            <span>Web</span><span>Learning</span>
+          </div>
+          <div class="card-links">
+            <a href="https://github.com/yeimineh-lab" target="_blank" rel="noopener noreferrer">View GitHub</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <h3>Upcoming Projects</h3>
+          <p>Ongoing and future projects focusing on real-world use cases, performance, and clean user experience.</p>
+          <div class="tags">
+            <span>In Progress</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="experience" class="section">
+      <h2>Experience</h2>
+
+      <div class="stack">
+        <div class="item">
+          <div class="item-top">
+            <h3>Developer / Learner</h3>
+            <span class="muted">2024 — Present</span>
+          </div>
+          <p>Building projects, improving technical skills, and applying best practices in frontend development.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section">
+      <h2>Skills</h2>
+
+      <div class="chips" aria-label="Skills list">
+        <span class="chip">HTML5</span>
+        <span class="chip">CSS3</span>
+        <span class="chip">JavaScript</span>
+        <span class="chip">Responsive Design</span>
+        <span class="chip">Git & GitHub</span>
+      </div>
+    </section>
+
+    <section id="education" class="section">
+      <h2>Education</h2>
+
+      <div class="stack">
+        <div class="item">
+          <div class="item-top">
+            <h3>Self-Directed Learning & Courses</h3>
+            <span class="muted">Ongoing</span>
+          </div>
+          <p>Learning web development through hands-on projects, documentation, and online resources.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <h2>Contact</h2>
+      <p class="section-sub">Interested in collaboration or have a question? Feel free to reach out.</p>
+
+      <div class="contact-card">
+        <p><strong>Email:</strong> <a href="mailto:Yeimineh@outlook.com">Yeimineh@outlook.com</a></p>
+        <p><strong>Phone:</strong> <a href="tel:+4799106725">+47 991 06 725</a></p>
+        <p><strong>Address:</strong> Fjæreveien 135</p>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p>© <span id="year"></span> Yei Min Eh</p>
+    </footer>
+  </main>
+
+  <script>
+    // Always start at the top on refresh/navigation
+    if ("scrollRestoration" in history) history.scrollRestoration = "manual";
+    window.addEventListener("pageshow", () => window.scrollTo(0, 0));
+
+    // Footer year
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    // Mobile menu toggle
+    const menuBtn = document.querySelector(".menu-btn");
+    const navLinks = document.getElementById("navLinks");
+
+    const setMenu = (open) => {
+      navLinks.classList.toggle("is-open", open);
+      menuBtn.setAttribute("aria-expanded", String(open));
+      menuBtn.setAttribute("aria-label", open ? "Close menu" : "Open menu");
+    };
+
+    menuBtn.addEventListener("click", () => setMenu(!navLinks.classList.contains("is-open")));
+    navLinks.addEventListener("click", (e) => e.target.tagName === "A" && setMenu(false));
+    window.addEventListener("resize", () => window.matchMedia("(min-width: 901px)").matches && setMenu(false));
+  </script>
+</body>
+</html>
