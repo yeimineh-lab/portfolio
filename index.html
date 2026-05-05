@@ -5,18 +5,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <title>Portfolio — Yei Min Eh</title>
-  <meta name="description" content="Portfolio of Yei Min Eh" />
+  <meta name="description" content="Portfolio of Yei Min Eh — projects, skills, education, experience, and contact information." />
 
   <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
   <header class="header">
-    <nav class="nav">
+    <nav class="nav" aria-label="Primary navigation">
       <a class="logo" href="#top">Yei Min Eh</a>
 
-      <button class="menu-btn" aria-controls="navLinks" aria-expanded="false">
-        <span class="menu-icon"></span>
+      <button
+        class="menu-btn"
+        type="button"
+        aria-label="Open menu"
+        aria-controls="navLinks"
+        aria-expanded="false"
+      >
+        <span class="menu-icon" aria-hidden="true"></span>
       </button>
 
       <div class="nav-links" id="navLinks">
@@ -31,8 +37,7 @@
 
   <main id="top" class="main">
 
-    <!-- HERO -->
-    <section class="hero">
+    <section class="hero" aria-label="Introduction">
       <div class="hero-text">
         <h1>Hi, I’m <span class="accent">Yei Min Eh</span>.</h1>
 
@@ -46,122 +51,164 @@
           <a class="button button-ghost" href="#contact">Get in touch</a>
         </div>
 
-        <div class="meta">
-          <a href="https://www.linkedin.com/in/yei-min-eh-a9289a289/" target="_blank">LinkedIn</a>
-          <span>•</span>
-          <a href="https://github.com/yeimineh-lab" target="_blank">GitHub</a>
-          <span>•</span>
-          <a href="Min-CV.pdf" target="_blank">Download CV</a>
+        <div class="meta" aria-label="Profile links">
+          <a href="https://www.linkedin.com/in/yei-min-eh-a9289a289/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <span aria-hidden="true">•</span>
+          <a href="https://github.com/yeimineh-lab" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <span aria-hidden="true">•</span>
+          <a href="Min-CV.pdf" target="_blank" rel="noopener noreferrer">Download CV</a>
         </div>
       </div>
 
-      <!-- 👇 BILDET DITT -->
       <div class="hero-image">
-        <img src="Yeimin.jpg" alt="Yei Min Eh">
+        <img src="Yeimin.jpg" alt="Portrait of Yei Min Eh">
       </div>
     </section>
 
-    <!-- PROJECTS -->
     <section id="projects" class="section">
       <h2>Projects</h2>
-      <p class="section-sub">A selection of projects I have worked on.</p>
+      <p class="section-sub">A selection of projects I have worked on through studies and personal learning.</p>
 
       <div class="grid">
-        <article class="card">
+        <article class="card project-feature">
           <h3>PollApp</h3>
+
+          <div class="image-carousel" aria-label="PollApp screenshots">
+            <img src="images/pollapp-1.png" alt="PollApp home page">
+            <img src="images/pollapp-2.png" alt="PollApp public polls page">
+            <img src="images/pollapp-3.png" alt="PollApp login and account panel">
+            <img src="images/pollapp-4.png" alt="PollApp voting results page">
+            <img src="images/pollapp-5.png" alt="PollApp create poll page">
+          </div>
+
           <p>
             A web application where users can create and participate in polls.
-            Includes user handling, public and private polls, and database storage.
+            Includes user handling, public and private polls, voting, and database storage.
           </p>
+
           <div class="tags">
-            <span>HTML</span><span>CSS</span><span>JavaScript</span><span>SQL</span>
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+            <span>SQL</span>
           </div>
+
           <div class="card-links">
-            <a href="https://github.com/yeimineh-lab/PollApp" target="_blank">View Project</a>
+            <a href="https://github.com/yeimineh-lab/PollApp" target="_blank" rel="noopener noreferrer">
+              View Project
+            </a>
           </div>
         </article>
 
         <article class="card">
           <h3>RecycleGame</h3>
           <p>
-            A 2D game built in Unity where players sort waste into correct bins.
-            Built in collaboration with Returkraft.
+            A 2D game built in Unity where players sort waste into the correct bins.
+            Built as a team project in collaboration with Returkraft.
           </p>
+
           <div class="tags">
-            <span>Unity</span><span>Game Dev</span>
+            <span>Unity</span>
+            <span>Game Development</span>
+            <span>Team Project</span>
           </div>
         </article>
 
         <article class="card">
           <h3>Web Projects</h3>
           <p>
-            Websites built with HTML, CSS, JavaScript, and Bootstrap.
+            Websites and study projects built with HTML, CSS, JavaScript, and Bootstrap.
+            Focused on responsive design, structure, and practical frontend development.
           </p>
+
           <div class="tags">
-            <span>HTML</span><span>CSS</span><span>JavaScript</span>
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+            <span>Bootstrap</span>
+          </div>
+
+          <div class="card-links">
+            <a href="https://github.com/yeimineh-lab" target="_blank" rel="noopener noreferrer">
+              View GitHub
+            </a>
           </div>
         </article>
       </div>
     </section>
 
-    <!-- EXPERIENCE -->
     <section id="experience" class="section">
       <h2>Experience</h2>
 
       <div class="stack">
         <div class="item">
-          <h3>Technical Experience</h3>
+          <div class="item-top">
+            <h3>Practical and technical experience</h3>
+            <span class="muted">Ongoing</span>
+          </div>
           <p>
-            Experience with web development, Unity, PC setup, and troubleshooting.
+            Experience with web development, application development, Unity projects,
+            PC setup, operating systems, and basic troubleshooting.
           </p>
         </div>
 
         <div class="item">
-          <h3>Work Experience</h3>
+          <div class="item-top">
+            <h3>Work experience</h3>
+            <span class="muted">Previous roles</span>
+          </div>
           <p>
-            Warehouse, support contact, and construction work. Strong teamwork and responsibility.
+            Experience from warehouse work, support contact work, and construction.
+            Developed skills in responsibility, teamwork, communication, and structured work.
           </p>
         </div>
       </div>
     </section>
 
-    <!-- SKILLS -->
     <section id="skills" class="section">
       <h2>Skills</h2>
 
-      <div class="chips">
+      <div class="chips" aria-label="Skills list">
         <span class="chip">HTML</span>
         <span class="chip">CSS</span>
         <span class="chip">JavaScript</span>
         <span class="chip">Python</span>
         <span class="chip">Java</span>
+        <span class="chip">Bootstrap</span>
         <span class="chip">SQL</span>
         <span class="chip">Unity</span>
         <span class="chip">PC Setup</span>
         <span class="chip">Git & GitHub</span>
+        <span class="chip">Adobe Creative Cloud</span>
+        <span class="chip">UI/UX Design</span>
       </div>
     </section>
 
-    <!-- EDUCATION -->
     <section id="education" class="section">
       <h2>Education</h2>
 
       <div class="stack">
         <div class="item">
-          <h3>Bachelor in Multimedia and Design</h3>
-          <p>University of Agder (2023 — 2026)</p>
+          <div class="item-top">
+            <h3>Bachelor in Multimedia and Design</h3>
+            <span class="muted">2023 — 2026</span>
+          </div>
+          <p>University of Agder, Grimstad</p>
         </div>
 
         <div class="item">
-          <h3>Supplementary Studies</h3>
-          <p>Sam Eyde (2016 — 2017)</p>
+          <div class="item-top">
+            <h3>Supplementary General Studies</h3>
+            <span class="muted">2016 — 2017</span>
+          </div>
+          <p>Sam Eyde Upper Secondary School</p>
         </div>
       </div>
     </section>
 
-    <!-- CONTACT -->
     <section id="contact" class="section">
       <h2>Contact</h2>
+      <p class="section-sub">Feel free to reach out if you have a question or want to get in touch.</p>
 
       <div class="contact-card">
         <p><strong>Email:</strong> <a href="mailto:Yeimineh@outlook.com">Yeimineh@outlook.com</a></p>
@@ -175,7 +222,6 @@
     </footer>
   </main>
 
-  <!-- SCRIPT -->
   <script>
     if ("scrollRestoration" in history) {
       history.scrollRestoration = "manual";
@@ -185,7 +231,10 @@
       window.scrollTo(0, 0);
     });
 
-    document.getElementById("year").textContent = new Date().getFullYear();
+    const yearEl = document.getElementById("year");
+    if (yearEl) {
+      yearEl.textContent = new Date().getFullYear();
+    }
 
     const menuBtn = document.querySelector(".menu-btn");
     const navLinks = document.getElementById("navLinks");
@@ -193,14 +242,26 @@
     if (menuBtn && navLinks) {
       const setMenu = (open) => {
         navLinks.classList.toggle("is-open", open);
-        menuBtn.setAttribute("aria-expanded", open);
+        menuBtn.setAttribute("aria-expanded", String(open));
+        menuBtn.setAttribute("aria-label", open ? "Close menu" : "Open menu");
       };
 
       menuBtn.addEventListener("click", () => {
         setMenu(!navLinks.classList.contains("is-open"));
       });
+
+      navLinks.addEventListener("click", (event) => {
+        if (event.target.tagName === "A") {
+          setMenu(false);
+        }
+      });
+
+      window.addEventListener("resize", () => {
+        if (window.matchMedia("(min-width: 901px)").matches) {
+          setMenu(false);
+        }
+      });
     }
   </script>
-
 </body>
 </html>
