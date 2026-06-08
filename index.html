@@ -3,265 +3,201 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-
   <title>Portfolio — Yei Min Eh</title>
-  <meta name="description" content="Portfolio of Yei Min Eh — projects, skills, education, experience, and contact information." />
 
   <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-  <header class="header">
-    <nav class="nav" aria-label="Primary navigation">
-      <a class="logo" href="#top">Yei Min Eh</a>
 
-      <button
-        class="menu-btn"
-        type="button"
-        aria-label="Open menu"
-        aria-controls="navLinks"
-        aria-expanded="false"
-      >
-        <span class="menu-icon" aria-hidden="true"></span>
-      </button>
+<header class="header">
+  <nav class="nav">
+    <a class="logo" href="#top">Yei Min Eh</a>
 
-      <div class="nav-links" id="navLinks">
-        <a href="#projects">Projects</a>
-        <a href="#experience">Experience</a>
-        <a href="#skills">Skills</a>
-        <a href="#education">Education</a>
-        <a href="#contact">Contact</a>
+    <div class="nav-links">
+      <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
+      <a href="#skills">Skills</a>
+      <a href="#education">Education</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+</header>
+
+<main id="top" class="main">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div>
+      <h1>Hi, I’m <span class="accent">Yei Min Eh</span></h1>
+
+      <p class="lead">
+        Junior developer with a bachelor in Multimedia and Design (UiA 2026).
+        Experience in web development, backend systems and Unity game development.
+      </p>
+
+      <div class="cta">
+        <a class="button" href="#projects">View projects</a>
+        <a class="button button-ghost" href="#contact">Contact</a>
       </div>
-    </nav>
-  </header>
 
-  <main id="top" class="main">
+      <p>
+        <a href="https://www.linkedin.com/in/yei-min-eh-a9289a289/" target="_blank">LinkedIn</a> •
+        <a href="https://github.com/yeimineh-lab" target="_blank">GitHub</a> •
+        <a href="Min-CV.pdf" target="_blank">CV</a>
+      </p>
+    </div>
 
-    <section class="hero" aria-label="Introduction">
-      <div class="hero-text">
-        <h1>Hi, I’m <span class="accent">Yei Min Eh</span>.</h1>
+    <div class="hero-image">
+      <img src="Yeimin.jpg" alt="Portrait of Yei Min Eh">
+    </div>
+  </section>
 
-        <p class="lead">
-          I build web applications and work with technology through hands-on projects.
-          I’m interested in development, IT systems, and practical problem solving.
+  <!-- PROJECTS -->
+  <section id="projects" class="section">
+    <h2>Projects</h2>
+    <p class="section-sub">Selected projects from studies and development work.</p>
+
+    <div class="grid">
+
+      <!-- PollApp -->
+      <article class="card">
+        <h3>PollApp</h3>
+
+        <div class="image-carousel">
+          <img src="images/pollapp-1.png" alt="PollApp screenshot 1">
+          <img src="images/pollapp-2.png" alt="PollApp screenshot 2">
+          <img src="images/pollapp-3.png" alt="PollApp screenshot 3">
+          <img src="images/pollapp-4.png" alt="PollApp screenshot 4">
+          <img src="images/pollapp-5.png" alt="PollApp screenshot 5">
+        </div>
+
+        <p>
+          Fullstack web application with authentication, voting system,
+          API integration and database storage.
         </p>
 
-        <div class="cta">
-          <a class="button" href="#projects">View projects</a>
-          <a class="button button-ghost" href="#contact">Get in touch</a>
+        <div class="tags">
+          <span>HTML</span>
+          <span>CSS</span>
+          <span>JavaScript</span>
+          <span>SQL</span>
+        </div>
+      </article>
+
+      <!-- ReddRessursene -->
+      <article class="card">
+        <h3>ReddRessursene</h3>
+
+        <div class="image-carousel">
+          <img src="images/img1.png" alt="ReddRessursene screenshot 1">
+          <img src="images/img2.png" alt="ReddRessursene screenshot 2">
+          <img src="images/img3.png" alt="ReddRessursene screenshot 3">
+          <img src="images/img4.png" alt="ReddRessursene screenshot 4">
         </div>
 
-        <div class="meta" aria-label="Profile links">
-          <a href="https://www.linkedin.com/in/yei-min-eh-a9289a289/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-          <span aria-hidden="true">•</span>
-          <a href="https://github.com/yeimineh-lab" target="_blank" rel="noopener noreferrer">GitHub</a>
-          <span aria-hidden="true">•</span>
-          <a href="Min-CV.pdf" target="_blank" rel="noopener noreferrer">Download CV</a>
+        <p>
+          Unity 2D educational game developed with Returkraft.
+          Teaches waste sorting through interactive gameplay.
+        </p>
+
+        <div class="tags">
+          <span>Unity</span>
+          <span>C#</span>
+          <span>Game Development</span>
         </div>
-      </div>
+      </article>
 
-      <div class="hero-image">
-        <img src="Yeimin.jpg" alt="Portrait of Yei Min Eh">
-      </div>
-    </section>
+      <!-- Web -->
+      <article class="card">
+        <h3>Web Projects</h3>
 
-    <section id="projects" class="section">
-      <h2>Projects</h2>
-      <p class="section-sub">A selection of projects I have worked on through studies and personal learning.</p>
+        <p>
+          Frontend projects using HTML, CSS, JavaScript and Bootstrap.
+        </p>
 
-      <div class="grid">
-        <article class="card project-feature">
-          <h3>PollApp</h3>
-
-          <div class="image-carousel" aria-label="PollApp screenshots">
-            <img src="images/pollapp-1.png" alt="PollApp home page">
-            <img src="images/pollapp-2.png" alt="PollApp public polls page">
-            <img src="images/pollapp-3.png" alt="PollApp login and account panel">
-            <img src="images/pollapp-4.png" alt="PollApp voting results page">
-            <img src="images/pollapp-5.png" alt="PollApp create poll page">
-          </div>
-
-          <p>
-            A web application where users can create and participate in polls.
-            Includes user handling, public and private polls, voting, and database storage.
-          </p>
-
-          <div class="tags">
-            <span>HTML</span>
-            <span>CSS</span>
-            <span>JavaScript</span>
-            <span>SQL</span>
-          </div>
-
-          <div class="card-links">
-            <a href="https://github.com/yeimineh-lab/PollApp" target="_blank" rel="noopener noreferrer">
-              View Project
-            </a>
-          </div>
-        </article>
-
-        <article class="card">
-          <h3>RecycleGame</h3>
-          <p>
-            A 2D game built in Unity where players sort waste into the correct bins.
-            Built as a team project in collaboration with Returkraft.
-          </p>
-
-          <div class="tags">
-            <span>Unity</span>
-            <span>Game Development</span>
-            <span>Team Project</span>
-          </div>
-        </article>
-
-        <article class="card">
-          <h3>Web Projects</h3>
-          <p>
-            Websites and study projects built with HTML, CSS, JavaScript, and Bootstrap.
-            Focused on responsive design, structure, and practical frontend development.
-          </p>
-
-          <div class="tags">
-            <span>HTML</span>
-            <span>CSS</span>
-            <span>JavaScript</span>
-            <span>Bootstrap</span>
-          </div>
-
-          <div class="card-links">
-            <a href="https://github.com/yeimineh-lab" target="_blank" rel="noopener noreferrer">
-              View GitHub
-            </a>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <section id="experience" class="section">
-      <h2>Experience</h2>
-
-      <div class="stack">
-        <div class="item">
-          <div class="item-top">
-            <h3>Practical and technical experience</h3>
-            <span class="muted">Ongoing</span>
-          </div>
-          <p>
-            Experience with web development, application development, Unity projects,
-            PC setup, operating systems, and basic troubleshooting.
-          </p>
+        <div class="tags">
+          <span>HTML</span>
+          <span>CSS</span>
+          <span>JavaScript</span>
         </div>
+      </article>
 
-        <div class="item">
-          <div class="item-top">
-            <h3>Work experience</h3>
-            <span class="muted">Previous roles</span>
-          </div>
-          <p>
-            Experience from warehouse work, support contact work, and construction.
-            Developed skills in responsibility, teamwork, communication, and structured work.
-          </p>
-        </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience" class="section">
+    <h2>Experience</h2>
+
+    <div class="stack">
+      <div class="item">
+        <h3>Technical experience</h3>
+        <p>Web development, APIs, Unity, databases and troubleshooting.</p>
       </div>
-    </section>
 
-    <section id="skills" class="section">
-      <h2>Skills</h2>
-
-      <div class="chips" aria-label="Skills list">
-        <span class="chip">HTML</span>
-        <span class="chip">CSS</span>
-        <span class="chip">JavaScript</span>
-        <span class="chip">Python</span>
-        <span class="chip">Java</span>
-        <span class="chip">Bootstrap</span>
-        <span class="chip">SQL</span>
-        <span class="chip">Unity</span>
-        <span class="chip">PC Setup</span>
-        <span class="chip">Git & GitHub</span>
-        <span class="chip">Adobe Creative Cloud</span>
-        <span class="chip">UI/UX Design</span>
+      <div class="item">
+        <h3>Work experience</h3>
+        <p>Warehouse, construction and support work with responsibility and teamwork.</p>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section id="education" class="section">
-      <h2>Education</h2>
+  <!-- SKILLS -->
+  <section id="skills" class="section">
+    <h2>Skills</h2>
 
-      <div class="stack">
-        <div class="item">
-          <div class="item-top">
-            <h3>Bachelor in Multimedia and Design</h3>
-            <span class="muted">2023 — 2026</span>
-          </div>
-          <p>University of Agder, Grimstad</p>
-        </div>
+    <div class="tags">
+      <span>HTML</span>
+      <span>CSS</span>
+      <span>JavaScript</span>
+      <span>C#</span>
+      <span>Unity</span>
+      <span>SQL</span>
+      <span>Git</span>
+      <span>GitHub</span>
+      <span>API</span>
+      <span>UI/UX</span>
+    </div>
+  </section>
 
-        <div class="item">
-          <div class="item-top">
-            <h3>Supplementary General Studies</h3>
-            <span class="muted">2016 — 2017</span>
-          </div>
-          <p>Sam Eyde Upper Secondary School</p>
-        </div>
+  <!-- EDUCATION -->
+  <section id="education" class="section">
+    <h2>Education</h2>
+
+    <div class="stack">
+      <div class="item">
+        <h3>Bachelor in Multimedia and Design</h3>
+        <p>University of Agder (2023–2026)</p>
       </div>
-    </section>
 
-    <section id="contact" class="section">
-      <h2>Contact</h2>
-      <p class="section-sub">Feel free to reach out if you have a question or want to get in touch.</p>
-
-      <div class="contact-card">
-        <p><strong>Email:</strong> <a href="mailto:Yeimineh@outlook.com">Yeimineh@outlook.com</a></p>
-        <p><strong>Phone:</strong> <a href="tel:+4799106725">+47 991 06 725</a></p>
-        <p><strong>Location:</strong> Grimstad, Norway</p>
+      <div class="item">
+        <h3>Upper Secondary School</h3>
+        <p>Sam Eyde VGS (2016–2017)</p>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <footer class="footer">
-      <p>© <span id="year"></span> Yei Min Eh</p>
-    </footer>
-  </main>
+  <!-- CONTACT -->
+  <section id="contact" class="section">
+    <h2>Contact</h2>
 
-  <script>
-    if ("scrollRestoration" in history) {
-      history.scrollRestoration = "manual";
-    }
+    <div class="contact-card">
+      <p>Email: <a href="mailto:Yeimineh@outlook.com">Yeimineh@outlook.com</a></p>
+      <p>Phone: <a href="tel:+4799106725">+47 99106725</a></p>
+      <p>Location: Grimstad, Norway</p>
+    </div>
+  </section>
 
-    window.addEventListener("pageshow", () => {
-      window.scrollTo(0, 0);
-    });
+  <footer class="footer">
+    <p>© <span id="year"></span> Yei Min Eh</p>
+  </footer>
 
-    const yearEl = document.getElementById("year");
-    if (yearEl) {
-      yearEl.textContent = new Date().getFullYear();
-    }
+</main>
 
-    const menuBtn = document.querySelector(".menu-btn");
-    const navLinks = document.getElementById("navLinks");
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
 
-    if (menuBtn && navLinks) {
-      const setMenu = (open) => {
-        navLinks.classList.toggle("is-open", open);
-        menuBtn.setAttribute("aria-expanded", String(open));
-        menuBtn.setAttribute("aria-label", open ? "Close menu" : "Open menu");
-      };
-
-      menuBtn.addEventListener("click", () => {
-        setMenu(!navLinks.classList.contains("is-open"));
-      });
-
-      navLinks.addEventListener("click", (event) => {
-        if (event.target.tagName === "A") {
-          setMenu(false);
-        }
-      });
-
-      window.addEventListener("resize", () => {
-        if (window.matchMedia("(min-width: 901px)").matches) {
-          setMenu(false);
-        }
-      });
-    }
-  </script>
 </body>
 </html>
