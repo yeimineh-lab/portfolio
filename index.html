@@ -44,7 +44,7 @@
       <p>
         <a href="https://www.linkedin.com/in/yei-min-eh-a9289a289/" target="_blank">LinkedIn</a> •
         <a href="https://github.com/yeimineh-lab" target="_blank">GitHub</a> •
-        <a href="Min-CV.pdf" target="_blank">CV</a>
+        <a href="Yei Min Eh-CV.pdf" target="_blank">CV</a>
       </p>
     </div>
 
@@ -197,6 +197,67 @@
 
 <script>
   document.getElementById("year").textContent = new Date().getFullYear();
+
+  let lightboxIndex = 0;
+  let lightboxImages = [];
+
+  const lightbox = document.createElement("div");
+  lightbox.style.position = "fixed";
+  lightbox.style.top = "0";
+  lightbox.style.left = "0";
+  lightbox.style.width = "100%";
+  lightbox.style.height = "100%";
+  lightbox.style.background = "rgba(0,0,0,0.9)";
+  lightbox.style.display = "none";
+  lightbox.style.alignItems = "center";
+  lightbox.style.justifyContent = "center";
+  lightbox.style.zIndex = "9999";
+
+  lightbox.innerHTML = `
+    <button id="lb-prev" style="position:absolute;left:20px;font-size:40px;background:none;border:none;color:white;cursor:pointer;">‹</button>
+    <img id="lb-img" style="max-width:85%;max-height:85%;border-radius:12px;">
+    <button id="lb-next" style="position:absolute;right:20px;font-size:40px;background:none;border:none;color:white;cursor:pointer;">›</button>
+  `;
+
+  document.body.appendChild(lightbox);
+
+  const lbImg = document.getElementById("lb-img");
+
+  function showImage(index) {
+    if (index < 0) index = lightboxImages.length - 1;
+    if (index >= lightboxImages.length) index = 0;
+
+    lightboxIndex = index;
+    lbImg.src = lightboxImages[lightboxIndex];
+  }
+
+  document.getElementById("lb-prev").onclick = () => showImage(lightboxIndex - 1);
+  document.getElementById("lb-next").onclick = () => showImage(lightboxIndex + 1);
+
+  lightbox.onclick = (e) => {
+    if (e.target === lightbox) {
+      lightbox.style.display = "none";
+    }
+  };
+
+  function setupLightbox() {
+    document.querySelectorAll(".image-carousel").forEach((carousel) => {
+      const imgs = Array.from(carousel.querySelectorAll("img"));
+
+      imgs.forEach((img, i) => {
+        img.style.cursor = "pointer";
+
+        img.addEventListener("click", () => {
+          lightboxImages = imgs.map(im => im.src);
+          lightboxIndex = i;
+          showImage(i);
+          lightbox.style.display = "flex";
+        });
+      });
+    });
+  }
+
+  setupLightbox();
 </script>
 
 </body>
