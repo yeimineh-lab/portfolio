@@ -1,562 +1,2187 @@
 <!doctype html>
 <html lang="en">
+
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="utf-8">
 
-  <title>Portfolio — Yei Min Eh</title>
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1"
+  >
 
-  <link rel="stylesheet" href="style.css" />
+  <title>Yei Min Eh — Developer Portfolio</title>
+
+  <meta
+    name="description"
+    content="Portfolio of Yei Min Eh — junior developer focused on programming, web development, UI/UX, backend and data."
+  >
+
+  <script>
+    document.documentElement.classList.add("js");
+  </script>
+
+  <link
+    rel="stylesheet"
+    href="style.css"
+  >
 </head>
+
 
 <body>
 
+  <!-- =========================================
+       HEADER
+  ========================================== -->
+
   <header class="header">
-    <nav class="nav">
-      <a class="logo" href="#top">Yei Min Eh</a>
+
+    <nav
+      class="nav"
+      aria-label="Main navigation"
+    >
+
+      <a
+        class="logo"
+        href="#top"
+        aria-label="Back to top"
+      >
+        Yei Min Eh
+      </a>
+
 
       <div class="nav-links">
-        <a href="#projects">Projects</a>
-        <a href="#experience">Experience</a>
-        <a href="#skills">Skills</a>
-        <a href="#education">Education</a>
-        <a href="#contact">Contact</a>
+
+        <a href="#about">
+          About
+        </a>
+
+        <a href="#projects">
+          Projects
+        </a>
+
+        <a href="#photography">
+          Photography
+        </a>
+
+        <a href="#skills">
+          Skills
+        </a>
+
+        <a href="#education">
+          Education
+        </a>
+
+        <a href="#contact">
+          Contact
+        </a>
+
       </div>
+
     </nav>
+
   </header>
 
-  <main id="top" class="main">
 
-    <!-- HERO -->
-    <section class="hero">
-      <div>
-        <h1>
-          Hi, I’m <span class="accent">Yei Min Eh</span>
-        </h1>
 
-        <p class="lead">
-          Junior developer with a bachelor's degree in Multimedia and Design
-          from the University of Agder. I have experience in web development,
-          backend systems, mobile applications and Unity game development.
+  <!-- =========================================
+       MAIN
+  ========================================== -->
+
+  <main
+    id="top"
+    class="main"
+  >
+
+
+    <!-- =========================================
+         HERO
+    ========================================== -->
+
+    <section
+      class="hero"
+      aria-labelledby="hero-title"
+    >
+
+      <div class="hero-content hero-reveal">
+
+        <p class="eyebrow">
+          Junior Developer
         </p>
 
-        <div class="cta">
-          <a class="button" href="#projects">View projects</a>
-          <a class="button button-ghost" href="#contact">Contact</a>
+
+        <h1 id="hero-title">
+
+          Programming,
+
+          <span class="accent">
+            Web Development &amp; UI/UX
+          </span>
+
+        </h1>
+
+
+        <p class="lead">
+
+          Hi, I’m Yei Min Eh. I’m a developer with a background
+          in Multimedia and Design, interested in programming,
+          web development, UI/UX and IT/data.
+
+        </p>
+
+
+        <div class="hero-actions">
+
+          <a
+            class="button"
+            href="#projects"
+          >
+            View Projects
+          </a>
+
+
+          <a
+            class="button button-secondary"
+            href="#contact"
+          >
+            Contact Me
+          </a>
+
         </div>
 
-        <p>
+
+        <div class="hero-links">
+
           <a
             href="https://www.linkedin.com/in/yei-min-eh-a9289a289/"
             target="_blank"
             rel="noopener noreferrer"
           >
-            LinkedIn
+            LinkedIn ↗
           </a>
-          •
+
+
           <a
             href="https://github.com/yeimineh-lab"
             target="_blank"
             rel="noopener noreferrer"
           >
-            GitHub
+            GitHub ↗
           </a>
-          •
+
+
           <a
             href="YME.pdf"
             target="_blank"
             rel="noopener noreferrer"
           >
-            CV
+            CV ↗
           </a>
-        </p>
+
+        </div>
+
       </div>
 
-      <div class="hero-image">
-        <img src="yme.png" alt="Portrait of Yei Min Eh">
+
+
+      <div class="hero-image hero-reveal">
+
+        <img
+          src="yme.png"
+          alt="Portrait of Yei Min Eh"
+          width="220"
+          height="220"
+        >
+
       </div>
+
     </section>
 
-    <!-- PROJECTS -->
-    <section id="projects" class="section">
-      <h2>Projects</h2>
 
-      <p class="section-sub">
-        Selected projects from my studies and development work.
-      </p>
 
-      <div class="grid">
+    <!-- =========================================
+         QUICK INFO
+    ========================================== -->
 
-        <!-- POLLAPP -->
-        <article class="card">
-          <h3>PollApp</h3>
+    <section
+      class="quick-info reveal-group"
+      aria-label="Developer overview"
+    >
 
-          <div class="image-carousel">
-            <img
-              src="images/pollapp-1.png"
-              alt="PollApp login page"
-              loading="lazy"
+      <div class="quick-item reveal">
+
+        <span>
+          Focus
+        </span>
+
+        <strong>
+          Programming · Web · UI/UX
+        </strong>
+
+      </div>
+
+
+      <div class="quick-item reveal">
+
+        <span>
+          Technical
+        </span>
+
+        <strong>
+          Frontend · Backend · Data
+        </strong>
+
+      </div>
+
+
+      <div class="quick-item reveal">
+
+        <span>
+          Based in
+        </span>
+
+        <strong>
+          Grimstad, Norway
+        </strong>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- =========================================
+         ABOUT
+    ========================================== -->
+
+    <section
+      id="about"
+      class="section"
+    >
+
+      <div class="section-heading reveal">
+
+        <p class="eyebrow">
+          About
+        </p>
+
+
+        <h2>
+          Developer with a practical and visual approach.
+        </h2>
+
+      </div>
+
+
+      <div class="about-content reveal">
+
+        <p>
+
+          I enjoy solving technical problems and building digital
+          solutions that are simple, useful and easy to understand.
+
+        </p>
+
+
+        <p>
+
+          My experience includes frontend and backend development,
+          databases, REST APIs, UI/UX, Git and deployment. Through
+          university projects I have also worked with Flutter and Unity.
+
+        </p>
+
+
+        <p>
+
+          I’m especially interested in roles involving programming,
+          web development, IT/data and user-focused digital solutions.
+
+        </p>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- =========================================
+         PROJECTS
+    ========================================== -->
+
+    <section
+      id="projects"
+      class="section"
+    >
+
+      <div class="section-heading reveal">
+
+        <p class="eyebrow">
+          Selected Work
+        </p>
+
+
+        <h2>
+          Projects
+        </h2>
+
+
+        <p class="section-sub">
+
+          A selection of projects developed during my studies,
+          covering web development, programming, databases,
+          UI/UX and interactive systems.
+
+        </p>
+
+      </div>
+
+
+
+      <!-- =========================================
+           POLLAPP
+      ========================================== -->
+
+      <article class="featured-project reveal">
+
+        <div class="featured-media">
+
+          <div
+            class="carousel"
+            aria-label="PollApp screenshots"
+          >
+
+            <button
+              class="carousel-button carousel-prev"
+              type="button"
+              aria-label="Previous PollApp image"
             >
+              ‹
+            </button>
 
-            <img
-              src="images/pollapp-2.png"
-              alt="PollApp voting interface"
-              loading="lazy"
-            >
 
-            <img
-              src="images/pollapp-3.png"
-              alt="PollApp poll overview"
-              loading="lazy"
-            >
+            <div class="carousel-track">
 
-            <img
-              src="images/pollapp-4.png"
-              alt="PollApp results page"
-              loading="lazy"
-            >
+              <img
+                src="images/pollapp-1.png"
+                alt="PollApp interface"
+                loading="lazy"
+              >
 
-            <img
-              src="images/pollapp-5.png"
-              alt="PollApp administration page"
-              loading="lazy"
+              <img
+                src="images/pollapp-2.png"
+                alt="PollApp voting interface"
+                loading="lazy"
+              >
+
+              <img
+                src="images/pollapp-3.png"
+                alt="PollApp poll overview"
+                loading="lazy"
+              >
+
+              <img
+                src="images/pollapp-4.png"
+                alt="PollApp results"
+                loading="lazy"
+              >
+
+              <img
+                src="images/pollapp-5.png"
+                alt="PollApp administration interface"
+                loading="lazy"
+              >
+
+            </div>
+
+
+            <button
+              class="carousel-button carousel-next"
+              type="button"
+              aria-label="Next PollApp image"
             >
+              ›
+            </button>
+
+
+            <div
+              class="carousel-counter"
+              aria-hidden="true"
+            >
+              1 / 5
+            </div>
+
           </div>
 
-          <p>
-            A full-stack web application developed with user authentication,
-            a voting system and database integration. Node.js was used for
-            backend development, MySQL for data storage and Render for
-            deployment.
+        </div>
+
+
+
+        <div class="featured-content">
+
+          <p class="project-label">
+            Full-stack Web Application
           </p>
 
+
+          <h3>
+            PollApp
+          </h3>
+
+
+          <p class="project-description">
+
+            A simple polling application where anyone can vote
+            without an account. Registered users can create public
+            polls or anonymous polls limited to signed-in users.
+
+          </p>
+
+
+          <div class="project-info">
+
+            <div>
+
+              <span>
+                Role
+              </span>
+
+              <strong>
+                Full-stack development
+              </strong>
+
+            </div>
+
+
+            <div>
+
+              <span>
+                Backend
+              </span>
+
+              <strong>
+                Node.js · MySQL
+              </strong>
+
+            </div>
+
+
+            <div>
+
+              <span>
+                Deployment
+              </span>
+
+              <strong>
+                Render
+              </strong>
+
+            </div>
+
+          </div>
+
+
           <div class="tags">
+
             <span>HTML</span>
             <span>CSS</span>
             <span>JavaScript</span>
             <span>Node.js</span>
             <span>MySQL</span>
-            <span>Render</span>
+
           </div>
+
+        </div>
+
+      </article>
+
+
+
+      <!-- =========================================
+           PROJECT GRID
+      ========================================== -->
+
+      <div class="project-grid reveal-group">
+
+
+        <!-- REDD RESSURSENE -->
+
+        <article class="project-card reveal">
+
+          <div
+            class="carousel"
+            aria-label="ReddRessursene screenshots"
+          >
+
+            <button
+              class="carousel-button carousel-prev"
+              type="button"
+              aria-label="Previous ReddRessursene image"
+            >
+              ‹
+            </button>
+
+
+            <div class="carousel-track">
+
+              <img
+                src="images/img1.png"
+                alt="ReddRessursene game menu"
+                loading="lazy"
+              >
+
+              <img
+                src="images/img2.png"
+                alt="ReddRessursene recycling gameplay"
+                loading="lazy"
+              >
+
+              <img
+                src="images/img3.png"
+                alt="ReddRessursene gameplay interface"
+                loading="lazy"
+              >
+
+              <img
+                src="images/img4.png"
+                alt="ReddRessursene leaderboard"
+                loading="lazy"
+              >
+
+            </div>
+
+
+            <button
+              class="carousel-button carousel-next"
+              type="button"
+              aria-label="Next ReddRessursene image"
+            >
+              ›
+            </button>
+
+
+            <div
+              class="carousel-counter"
+              aria-hidden="true"
+            >
+              1 / 4
+            </div>
+
+          </div>
+
+
+
+          <div class="project-card-content">
+
+            <p class="project-label">
+              Bachelor Project · Unity
+            </p>
+
+
+            <h3>
+              ReddRessursene
+            </h3>
+
+
+            <p>
+
+              A 2D bachelor project developed with Returkraft.
+              Players rescue recyclable waste by sorting it into
+              the correct category.
+
+            </p>
+
+
+            <p>
+
+              The game becomes faster as the player improves and
+              includes scoring, rankings and a leaderboard.
+
+            </p>
+
+
+            <div class="project-actions">
+
+              <a
+                class="project-link"
+                href="Attest Returkraft x Uia.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                View Returkraft Attest (PDF) ↗
+              </a>
+
+            </div>
+
+
+            <div class="tags">
+
+              <span>Unity</span>
+              <span>C#</span>
+              <span>Procreate</span>
+
+            </div>
+
+          </div>
+
         </article>
 
-        <!-- REDDRESSURSENE -->
-        <article class="card">
-          <h3>ReddRessursene</h3>
 
-          <div class="image-carousel">
-            <img
-              src="images/img1.png"
-              alt="ReddRessursene gameplay screenshot"
-              loading="lazy"
-            >
-
-            <img
-              src="images/img2.png"
-              alt="ReddRessursene waste sorting activity"
-              loading="lazy"
-            >
-
-            <img
-              src="images/img3.png"
-              alt="ReddRessursene educational game interface"
-              loading="lazy"
-            >
-
-            <img
-              src="images/img4.png"
-              alt="ReddRessursene game environment"
-              loading="lazy"
-            >
-          </div>
-
-          <p>
-            Developed in collaboration with Returkraft as a 2D educational
-            game about waste sorting. My role included implementing
-            interactive objects in Unity and supporting gameplay systems.
-            Unity was used for development and Procreate was used for creating
-            visual assets. The project was successfully delivered to
-            Returkraft.
-          </p>
-
-          <div class="tags">
-            <span>Unity</span>
-            <span>C#</span>
-            <span>Procreate</span>
-            <span>Game Development</span>
-          </div>
-        </article>
 
         <!-- TRAILMARK -->
-        <article class="card">
-          <h3>TrailMark</h3>
 
-          <div class="image-carousel">
-            <img
-              src="images/TrailMark.png"
-              alt="TrailMark mobile application"
-              loading="lazy"
-            >
+        <article class="project-card reveal">
+
+          <div
+            class="carousel trailmark-carousel"
+            aria-label="TrailMark screenshots"
+          >
+
+            <div class="carousel-track">
+
+              <img
+                src="images/TrailMark.png"
+                alt="TrailMark application interface"
+                loading="lazy"
+              >
+
+            </div>
+
           </div>
 
-          <p>
-            TrailMark is a Flutter mobile application designed to make
-            real-world activities more engaging through game-like features.
-            Users can complete photo-based quests and activity goals, while
-            their progress is stored in a personal achievement gallery.
-          </p>
 
-          <div class="tags">
-            <span>Flutter</span>
-            <span>Dart</span>
-            <span>Mobile Development</span>
+
+          <div class="project-card-content">
+
+            <p class="project-label">
+              Flutter Project
+            </p>
+
+
+            <h3>
+              TrailMark
+            </h3>
+
+
+            <p>
+
+              A Flutter app with daily quests that reset every
+              24 hours. Challenges include photo tasks, step goals
+              and distance-based activities.
+
+            </p>
+
+
+            <p>
+
+              Users earn trophies, build progression and can save
+              completed quest photos in a personal gallery.
+
+            </p>
+
+
+            <div class="tags">
+
+              <span>Flutter</span>
+              <span>Dart</span>
+              <span>UI/UX</span>
+
+            </div>
+
           </div>
+
         </article>
 
-        <!-- SUKKERGRIS WEB PROJECT -->
-<article class="card">
-  <h3>Sukkergris Webshop</h3>
+      </div>
 
-  <div class="image-carousel">
-    <img
-      src="images/s1.png"
-      alt="Sukkergris webshop homepage"
-      loading="lazy"
+    </section>
+
+
+
+    <!-- =========================================
+         PHOTOGRAPHY
+    ========================================== -->
+
+    <section
+      id="photography"
+      class="section"
     >
 
-    <img
-      src="images/s2.png"
-      alt="Sukkergris product page"
-      loading="lazy"
+      <div class="section-heading reveal">
+
+        <p class="eyebrow">
+          Visual Work
+        </p>
+
+
+        <h2>
+          Photography
+        </h2>
+
+
+        <p class="section-sub">
+
+          A selection of photographs taken by me during my
+          Multimedia and Design studies. The images were edited
+          using Adobe Creative Cloud applications.
+
+        </p>
+
+      </div>
+
+
+
+      <div class="photo-grid reveal-group">
+
+
+        <figure class="photo-card reveal">
+
+          <div class="photo-image">
+
+            <img
+              src="images/FrittMotiv.jpg"
+              alt="Free theme photography project"
+              loading="lazy"
+            >
+
+          </div>
+
+
+          <figcaption>
+
+            <span>
+              Photography
+            </span>
+
+            <h3>
+              Free Theme
+            </h3>
+
+          </figcaption>
+
+        </figure>
+
+
+
+        <figure class="photo-card reveal">
+
+          <div class="photo-image">
+
+            <img
+              src="images/Panorama.jpg.jpg"
+              alt="Panorama photography project"
+              loading="lazy"
+            >
+
+          </div>
+
+
+          <figcaption>
+
+            <span>
+              Photography
+            </span>
+
+            <h3>
+              Panorama
+            </h3>
+
+          </figcaption>
+
+        </figure>
+
+
+
+        <figure class="photo-card reveal">
+
+          <div class="photo-image">
+
+            <img
+              src="images/Protrett.jpg.jpg"
+              alt="Portrait photography project"
+              loading="lazy"
+            >
+
+          </div>
+
+
+          <figcaption>
+
+            <span>
+              Portrait
+            </span>
+
+            <h3>
+              Portrait Study
+            </h3>
+
+          </figcaption>
+
+        </figure>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- =========================================
+         SKILLS
+    ========================================== -->
+
+    <section
+      id="skills"
+      class="section"
     >
 
-    <img
-      src="images/s3.png"
-      alt="Sukkergris shopping cart and order page"
-      loading="lazy"
+      <div class="section-heading reveal">
+
+        <p class="eyebrow">
+          Skills
+        </p>
+
+
+        <h2>
+          Technologies and tools
+        </h2>
+
+      </div>
+
+
+
+      <div class="skills-list reveal-group">
+
+
+        <div class="skill-row reveal">
+
+          <h3>
+            Programming &amp; Web
+          </h3>
+
+          <p>
+            HTML · CSS · JavaScript · Node.js
+          </p>
+
+        </div>
+
+
+
+        <div class="skill-row reveal">
+
+          <h3>
+            Data &amp; Backend
+          </h3>
+
+          <p>
+            SQL · MySQL · REST APIs · Backend Development
+          </p>
+
+        </div>
+
+
+
+        <div class="skill-row reveal">
+
+          <h3>
+            UI/UX
+          </h3>
+
+          <p>
+            Interface Design · Responsive Design · User Experience
+          </p>
+
+        </div>
+
+
+
+        <div class="skill-row reveal">
+
+          <h3>
+            Development Tools
+          </h3>
+
+          <p>
+            Git · GitHub · Render
+          </p>
+
+        </div>
+
+
+
+        <div class="skill-row secondary-skill reveal">
+
+          <h3>
+            Additional Experience
+          </h3>
+
+          <p>
+            C# · Unity · Dart · Flutter · Procreate · Adobe Creative Cloud
+          </p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- =========================================
+         EDUCATION
+    ========================================== -->
+
+    <section
+      id="education"
+      class="section"
     >
-  </div>
 
- <p>
-  Developed a full-stack webshop as part of a university project. The application allows users to browse products, search and filter products by category, add items to a shopping cart, and place orders.
-</p>
+      <div class="section-heading reveal">
 
-<p>
-  My contribution included both frontend and backend development, implementing user authentication, product management, shopping cart functionality, order handling, and database integration.
-</p>
+        <p class="eyebrow">
+          Education
+        </p>
 
-  <div class="tags">
-    <span>HTML</span>
-    <span>CSS</span>
-    <span>JavaScript</span>
-    <span>Node.js</span>
-    <span>MySQL</span>
-    <span>Full-stack</span>
-  </div>
-</article>
+
+        <h2>
+          Education &amp; Grades
+        </h2>
+
+
+        <p class="section-sub">
+
+          My academic background with access to official
+          grade documentation.
+
+        </p>
 
       </div>
-    </section>
 
-    <!-- EXPERIENCE -->
-    <section id="experience" class="section">
-      <h2>Experience</h2>
 
-      <div class="stack">
-        <div class="item">
-          <h3>Technical experience</h3>
 
-          <p>
-            Experience with frontend and backend web development, REST APIs,
-            Unity, databases, Git, deployment and technical troubleshooting.
-          </p>
-        </div>
+      <div class="education-list reveal-group">
 
-        <div class="item">
-          <h3>Work experience</h3>
 
-          <p>
-            Experience from warehouse, construction and support work, with a
-            strong focus on responsibility, teamwork, communication and
-            practical problem-solving.
-          </p>
-        </div>
+        <!-- UNIVERSITY -->
+
+        <article class="education-item reveal">
+
+          <div class="education-year">
+            2023 — 2026
+          </div>
+
+
+          <div class="education-content">
+
+            <h3>
+              Bachelor in Multimedia and Design
+            </h3>
+
+            <p>
+              University of Agder
+            </p>
+
+
+            <div class="education-actions">
+
+              <a
+                class="document-button"
+                href="Vitnemål.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+
+                <span class="document-icon">
+                  PDF
+                </span>
+
+                <span>
+                  View University Grades
+                </span>
+
+                <span aria-hidden="true">
+                  ↗
+                </span>
+
+              </a>
+
+            </div>
+
+          </div>
+
+        </article>
+
+
+
+        <!-- UPPER SECONDARY -->
+
+        <article class="education-item reveal">
+
+          <div class="education-year">
+            2016 — 2017
+          </div>
+
+
+          <div class="education-content">
+
+            <h3>
+              Upper Secondary School
+            </h3>
+
+            <p>
+              Sam Eyde Upper Secondary School
+            </p>
+
+
+            <div class="education-actions">
+
+              <a
+                class="document-button"
+                href="vgs.vitnemål.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+
+                <span class="document-icon">
+                  PDF
+                </span>
+
+                <span>
+                  View Upper Secondary Grades
+                </span>
+
+                <span aria-hidden="true">
+                  ↗
+                </span>
+
+              </a>
+
+            </div>
+
+          </div>
+
+        </article>
+
       </div>
+
     </section>
 
-    <!-- SKILLS -->
-    <section id="skills" class="section">
-      <h2>Skills</h2>
 
-      <div class="tags">
-        <span>HTML</span>
-        <span>CSS</span>
-        <span>JavaScript</span>
-        <span>Node.js</span>
-        <span>C#</span>
-        <span>Unity</span>
-        <span>Flutter</span>
-        <span>Dart</span>
-        <span>SQL</span>
-        <span>MySQL</span>
-        <span>Git</span>
-        <span>GitHub</span>
-        <span>REST API</span>
-        <span>UI/UX</span>
-      </div>
-    </section>
 
-    <!-- EDUCATION -->
-    <section id="education" class="section">
-      <h2>Education</h2>
+    <!-- =========================================
+         CONTACT
+    ========================================== -->
 
-      <div class="stack">
-        <div class="item">
-          <h3>Bachelor in Multimedia and Design</h3>
+    <section
+      id="contact"
+      class="section contact-section"
+    >
 
-          <p>
-            University of Agder, 2023–2026
-          </p>
-        </div>
+      <div class="contact-content reveal">
 
-        <div class="item">
-          <h3>Upper Secondary School</h3>
+        <p class="eyebrow">
+          Contact
+        </p>
 
-          <p>
-            Sam Eyde Upper Secondary School, 2016–2017
-          </p>
-        </div>
-      </div>
-    </section>
 
-    <!-- CONTACT -->
-    <section id="contact" class="section">
-      <h2>Contact</h2>
+        <h2>
+          Let’s connect.
+        </h2>
 
-      <div class="contact-card">
+
         <p>
-          Email:
-          <a href="mailto:Yeimineh@outlook.com">
-            Yeimineh@outlook.com
+
+          I’m interested in opportunities within programming,
+          web development, UI/UX and IT/data.
+
+        </p>
+
+
+        <div class="contact-buttons">
+
+          <a
+            class="button"
+            href="mailto:Yeimineh@outlook.com"
+          >
+            Send Email
           </a>
-        </p>
 
-        <p>
-          Phone:
-          <a href="tel:+4799106725">
-            +47 991 06 725
+
+          <a
+            class="button button-secondary"
+            href="https://www.linkedin.com/in/yei-min-eh-a9289a289/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            LinkedIn ↗
           </a>
-        </p>
 
-        <p>
-          Location: Grimstad, Norway
-        </p>
+
+          <a
+            class="button button-secondary"
+            href="YME.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            View CV ↗
+          </a>
+
+        </div>
+
+
+
+        <div class="contact-details">
+
+          <p>
+
+            <span>
+              Email
+            </span>
+
+            <a href="mailto:Yeimineh@outlook.com">
+              Yeimineh@outlook.com
+            </a>
+
+          </p>
+
+
+          <p>
+
+            <span>
+              Phone
+            </span>
+
+            <a href="tel:+4799106725">
+              +47 991 06 725
+            </a>
+
+          </p>
+
+
+          <p>
+
+            <span>
+              Location
+            </span>
+
+            Grimstad, Norway
+
+          </p>
+
+        </div>
+
       </div>
+
     </section>
+
+
+
+    <!-- =========================================
+         FOOTER
+    ========================================== -->
 
     <footer class="footer">
+
       <p>
         © <span id="year"></span> Yei Min Eh
       </p>
+
+
+      <div class="footer-links">
+
+        <a
+          href="https://github.com/yeimineh-lab"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          GitHub
+        </a>
+
+
+        <a
+          href="https://www.linkedin.com/in/yei-min-eh-a9289a289/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          LinkedIn
+        </a>
+
+      </div>
+
     </footer>
 
   </main>
 
+
+
+  <!-- =========================================
+       BACK TO TOP
+  ========================================== -->
+
+  <a
+    id="back-to-top"
+    class="floating-back-to-top"
+    href="#top"
+    aria-label="Back to top"
+  >
+
+    <span class="back-arrow">
+      ↑
+    </span>
+
+    <span class="back-text">
+      Back to top
+    </span>
+
+  </a>
+
+
+
+  <!-- =========================================
+       LIGHTBOX
+  ========================================== -->
+
+  <div
+    id="lightbox"
+    class="lightbox"
+    aria-hidden="true"
+  >
+
+    <button
+      id="lightbox-close"
+      class="lightbox-close"
+      type="button"
+      aria-label="Close image viewer"
+    >
+      ×
+    </button>
+
+
+    <button
+      id="lightbox-prev"
+      class="lightbox-nav lightbox-prev"
+      type="button"
+      aria-label="Previous image"
+    >
+      ‹
+    </button>
+
+
+    <img
+      id="lightbox-image"
+      class="lightbox-image"
+      src=""
+      alt=""
+    >
+
+
+    <button
+      id="lightbox-next"
+      class="lightbox-nav lightbox-next"
+      type="button"
+      aria-label="Next image"
+    >
+      ›
+    </button>
+
+  </div>
+
+
+
+  <!-- =========================================
+       JAVASCRIPT
+  ========================================== -->
+
   <script>
-    const yearElement = document.getElementById("year");
+
+    /* =========================================
+       CURRENT YEAR
+    ========================================== */
+
+    const yearElement =
+      document.getElementById("year");
+
 
     if (yearElement) {
-      yearElement.textContent = new Date().getFullYear();
+
+      yearElement.textContent =
+        new Date().getFullYear();
+
     }
 
-    let lightboxIndex = 0;
-    let lightboxImages = [];
 
-    const lightbox = document.createElement("div");
-    lightbox.className = "lightbox";
 
-    lightbox.style.position = "fixed";
-    lightbox.style.inset = "0";
-    lightbox.style.width = "100%";
-    lightbox.style.height = "100%";
-    lightbox.style.background = "rgba(0, 0, 0, 0.9)";
-    lightbox.style.display = "none";
-    lightbox.style.alignItems = "center";
-    lightbox.style.justifyContent = "center";
-    lightbox.style.zIndex = "9999";
-    lightbox.style.padding = "20px";
-    lightbox.style.boxSizing = "border-box";
+    /* =========================================
+       HERO ENTRANCE
+    ========================================== */
 
-    lightbox.innerHTML = `
-      <button
-        id="lb-close"
-        type="button"
-        aria-label="Close image viewer"
-        style="
-          position: absolute;
-          top: 20px;
-          right: 25px;
-          font-size: 38px;
-          background: none;
-          border: none;
-          color: white;
-          cursor: pointer;
-        "
-      >
-        ×
-      </button>
+    const heroRevealElements =
+      document.querySelectorAll(
+        ".hero-reveal"
+      );
 
-      <button
-        id="lb-prev"
-        type="button"
-        aria-label="Previous image"
-        style="
-          position: absolute;
-          left: 20px;
-          font-size: 45px;
-          background: none;
-          border: none;
-          color: white;
-          cursor: pointer;
-        "
-      >
-        ‹
-      </button>
 
-      <img
-        id="lb-img"
-        alt=""
-        style="
-          max-width: 85%;
-          max-height: 85%;
-          border-radius: 12px;
-          object-fit: contain;
-        "
-      >
+    window.addEventListener(
+      "load",
+      () => {
 
-      <button
-        id="lb-next"
-        type="button"
-        aria-label="Next image"
-        style="
-          position: absolute;
-          right: 20px;
-          font-size: 45px;
-          background: none;
-          border: none;
-          color: white;
-          cursor: pointer;
-        "
-      >
-        ›
-      </button>
-    `;
+        heroRevealElements.forEach(
+          (element, index) => {
 
-    document.body.appendChild(lightbox);
+            setTimeout(
+              () => {
 
-    const lightboxImage = document.getElementById("lb-img");
-    const previousButton = document.getElementById("lb-prev");
-    const nextButton = document.getElementById("lb-next");
-    const closeButton = document.getElementById("lb-close");
+                element.classList.add(
+                  "is-visible"
+                );
 
-    function showImage(index) {
-      if (lightboxImages.length === 0) {
+              },
+
+              120 + index * 130
+
+            );
+
+          }
+        );
+
+      }
+    );
+
+
+
+    /* =========================================
+       SCROLL REVEAL
+    ========================================== */
+
+    const revealElements =
+      document.querySelectorAll(
+        ".reveal"
+      );
+
+
+    const revealObserver =
+      new IntersectionObserver(
+
+        (entries, observer) => {
+
+          entries.forEach(
+            (entry) => {
+
+              if (
+                !entry.isIntersecting
+              ) {
+                return;
+              }
+
+
+              entry.target.classList.add(
+                "is-visible"
+              );
+
+
+              observer.unobserve(
+                entry.target
+              );
+
+            }
+          );
+
+        },
+
+        {
+
+          threshold:
+            0.12,
+
+          rootMargin:
+            "0px 0px -10% 0px"
+
+        }
+
+      );
+
+
+    revealElements.forEach(
+      (element) => {
+
+        revealObserver.observe(
+          element
+        );
+
+      }
+    );
+
+
+
+    /* =========================================
+       STAGGER GROUPS
+    ========================================== */
+
+    document
+      .querySelectorAll(
+        ".reveal-group"
+      )
+      .forEach(
+        (group) => {
+
+          const children =
+            group.querySelectorAll(
+              ".reveal"
+            );
+
+
+          children.forEach(
+            (child, index) => {
+
+              child.style.setProperty(
+                "--reveal-delay",
+                `${index * 90}ms`
+              );
+
+            }
+          );
+
+        }
+      );
+
+
+
+    /* =========================================
+       ACTIVE NAVIGATION
+    ========================================== */
+
+    const navLinks =
+      Array.from(
+        document.querySelectorAll(
+          ".nav-links a"
+        )
+      );
+
+
+    const pageSections =
+      Array.from(
+        document.querySelectorAll(
+          "main section[id]"
+        )
+      );
+
+
+    const navObserver =
+      new IntersectionObserver(
+
+        (entries) => {
+
+          entries.forEach(
+            (entry) => {
+
+              if (
+                !entry.isIntersecting
+              ) {
+                return;
+              }
+
+
+              const currentId =
+                entry.target.id;
+
+
+              navLinks.forEach(
+                (link) => {
+
+                  const href =
+                    link.getAttribute(
+                      "href"
+                    );
+
+
+                  link.classList.toggle(
+
+                    "active",
+
+                    href ===
+                    `#${currentId}`
+
+                  );
+
+                }
+              );
+
+            }
+          );
+
+        },
+
+        {
+
+          rootMargin:
+            "-30% 0px -60% 0px",
+
+          threshold:
+            0
+
+        }
+
+      );
+
+
+    pageSections.forEach(
+      (section) => {
+
+        navObserver.observe(
+          section
+        );
+
+      }
+    );
+
+
+
+    /* =========================================
+       CAROUSELS
+    ========================================== */
+
+    const carousels =
+      document.querySelectorAll(
+        ".carousel"
+      );
+
+
+    carousels.forEach(
+      (carousel) => {
+
+        const track =
+          carousel.querySelector(
+            ".carousel-track"
+          );
+
+
+        const images =
+          Array.from(
+            track.querySelectorAll(
+              "img"
+            )
+          );
+
+
+        const previousButton =
+          carousel.querySelector(
+            ".carousel-prev"
+          );
+
+
+        const nextButton =
+          carousel.querySelector(
+            ".carousel-next"
+          );
+
+
+        const counter =
+          carousel.querySelector(
+            ".carousel-counter"
+          );
+
+
+        let currentIndex =
+          0;
+
+
+
+        if (
+          images.length <= 1
+        ) {
+
+          if (
+            previousButton
+          ) {
+            previousButton.hidden =
+              true;
+          }
+
+
+          if (
+            nextButton
+          ) {
+            nextButton.hidden =
+              true;
+          }
+
+
+          if (
+            counter
+          ) {
+            counter.hidden =
+              true;
+          }
+
+        }
+
+
+
+        function renderCarousel(
+          index
+        ) {
+
+          if (
+            !images.length
+          ) {
+            return;
+          }
+
+
+          if (
+            index < 0
+          ) {
+
+            index =
+              images.length - 1;
+
+          }
+
+
+          if (
+            index >=
+            images.length
+          ) {
+
+            index =
+              0;
+
+          }
+
+
+          currentIndex =
+            index;
+
+
+          track.scrollTo({
+
+            left:
+              track.clientWidth *
+              currentIndex,
+
+            behavior:
+              "smooth"
+
+          });
+
+
+          if (
+            counter
+          ) {
+
+            counter.textContent =
+              `${currentIndex + 1} / ${images.length}`;
+
+          }
+
+        }
+
+
+
+        if (
+          previousButton
+        ) {
+
+          previousButton
+            .addEventListener(
+              "click",
+              (event) => {
+
+                event.stopPropagation();
+
+
+                renderCarousel(
+                  currentIndex - 1
+                );
+
+              }
+            );
+
+        }
+
+
+
+        if (
+          nextButton
+        ) {
+
+          nextButton
+            .addEventListener(
+              "click",
+              (event) => {
+
+                event.stopPropagation();
+
+
+                renderCarousel(
+                  currentIndex + 1
+                );
+
+              }
+            );
+
+        }
+
+
+
+        let carouselTimer;
+
+
+        track.addEventListener(
+          "scroll",
+          () => {
+
+            clearTimeout(
+              carouselTimer
+            );
+
+
+            carouselTimer =
+              setTimeout(
+                () => {
+
+                  const width =
+                    track.clientWidth;
+
+
+                  if (
+                    !width
+                  ) {
+                    return;
+                  }
+
+
+                  currentIndex =
+                    Math.round(
+                      track.scrollLeft /
+                      width
+                    );
+
+
+                  if (
+                    counter
+                  ) {
+
+                    counter.textContent =
+                      `${currentIndex + 1} / ${images.length}`;
+
+                  }
+
+                },
+
+                75
+              );
+
+          }
+        );
+
+      }
+    );
+
+
+
+    /* =========================================
+       LIGHTBOX
+    ========================================== */
+
+    const lightbox =
+      document.getElementById(
+        "lightbox"
+      );
+
+
+    const lightboxImage =
+      document.getElementById(
+        "lightbox-image"
+      );
+
+
+    const lightboxClose =
+      document.getElementById(
+        "lightbox-close"
+      );
+
+
+    const lightboxPrevious =
+      document.getElementById(
+        "lightbox-prev"
+      );
+
+
+    const lightboxNext =
+      document.getElementById(
+        "lightbox-next"
+      );
+
+
+    let lightboxImages =
+      [];
+
+
+    let lightboxIndex =
+      0;
+
+
+
+    function showLightboxImage(
+      index
+    ) {
+
+      if (
+        !lightboxImages.length
+      ) {
         return;
       }
 
-      if (index < 0) {
-        index = lightboxImages.length - 1;
+
+      if (
+        index < 0
+      ) {
+
+        index =
+          lightboxImages.length - 1;
+
       }
 
-      if (index >= lightboxImages.length) {
-        index = 0;
+
+      if (
+        index >=
+        lightboxImages.length
+      ) {
+
+        index =
+          0;
+
       }
 
-      lightboxIndex = index;
-      lightboxImage.src = lightboxImages[lightboxIndex].src;
-      lightboxImage.alt = lightboxImages[lightboxIndex].alt;
+
+      lightboxIndex =
+        index;
+
+
+      lightboxImage.src =
+        lightboxImages[index].src;
+
+
+      lightboxImage.alt =
+        lightboxImages[index].alt;
+
+
+      const showNavigation =
+        lightboxImages.length > 1;
+
+
+      lightboxPrevious.hidden =
+        !showNavigation;
+
+
+      lightboxNext.hidden =
+        !showNavigation;
+
     }
 
-    function openLightbox(images, selectedIndex) {
-      lightboxImages = images;
-      lightboxIndex = selectedIndex;
 
-      showImage(selectedIndex);
 
-      lightbox.style.display = "flex";
-      document.body.style.overflow = "hidden";
+    function openLightbox(
+      images,
+      index
+    ) {
+
+      lightboxImages =
+        images;
+
+
+      showLightboxImage(
+        index
+      );
+
+
+      lightbox.classList.add(
+        "open"
+      );
+
+
+      lightbox.setAttribute(
+        "aria-hidden",
+        "false"
+      );
+
+
+      document.body.style.overflow =
+        "hidden";
+
     }
+
+
 
     function closeLightbox() {
-      lightbox.style.display = "none";
-      document.body.style.overflow = "";
-      lightboxImage.src = "";
-      lightboxImages = [];
+
+      lightbox.classList.remove(
+        "open"
+      );
+
+
+      lightbox.setAttribute(
+        "aria-hidden",
+        "true"
+      );
+
+
+      document.body.style.overflow =
+        "";
+
+
+      lightboxImage.src =
+        "";
+
+
+      lightboxImages =
+        [];
+
     }
 
-    previousButton.addEventListener("click", function (event) {
-      event.stopPropagation();
-      showImage(lightboxIndex - 1);
-    });
 
-    nextButton.addEventListener("click", function (event) {
-      event.stopPropagation();
-      showImage(lightboxIndex + 1);
-    });
 
-    closeButton.addEventListener("click", function () {
-      closeLightbox();
-    });
+    /* PROJECT IMAGES */
 
-    lightbox.addEventListener("click", function (event) {
-      if (event.target === lightbox) {
-        closeLightbox();
+    document
+      .querySelectorAll(
+        ".carousel-track"
+      )
+      .forEach(
+        (track) => {
+
+          const images =
+            Array.from(
+              track.querySelectorAll(
+                "img"
+              )
+            );
+
+
+          images.forEach(
+            (image, index) => {
+
+              image.addEventListener(
+                "click",
+                () => {
+
+                  const imageData =
+                    images.map(
+                      (item) => ({
+
+                        src:
+                          item.src,
+
+                        alt:
+                          item.alt
+
+                      })
+                    );
+
+
+                  openLightbox(
+                    imageData,
+                    index
+                  );
+
+                }
+              );
+
+            }
+          );
+
+        }
+      );
+
+
+
+    /* PHOTOGRAPHY */
+
+    const photographyImages =
+      Array.from(
+        document.querySelectorAll(
+          ".photo-image img"
+        )
+      );
+
+
+    photographyImages.forEach(
+      (image, index) => {
+
+        image.addEventListener(
+          "click",
+          () => {
+
+            const imageData =
+              photographyImages.map(
+                (photo) => ({
+
+                  src:
+                    photo.src,
+
+                  alt:
+                    photo.alt
+
+                })
+              );
+
+
+            openLightbox(
+              imageData,
+              index
+            );
+
+          }
+        );
+
       }
-    });
+    );
 
-    document.addEventListener("keydown", function (event) {
-      if (lightbox.style.display !== "flex") {
-        return;
+
+
+    /* =========================================
+       LIGHTBOX CONTROLS
+    ========================================== */
+
+    lightboxPrevious.addEventListener(
+      "click",
+      (event) => {
+
+        event.stopPropagation();
+
+
+        showLightboxImage(
+          lightboxIndex - 1
+        );
+
       }
+    );
 
-      if (event.key === "Escape") {
-        closeLightbox();
+
+    lightboxNext.addEventListener(
+      "click",
+      (event) => {
+
+        event.stopPropagation();
+
+
+        showLightboxImage(
+          lightboxIndex + 1
+        );
+
       }
+    );
 
-      if (event.key === "ArrowLeft") {
-        showImage(lightboxIndex - 1);
+
+    lightboxClose.addEventListener(
+      "click",
+      closeLightbox
+    );
+
+
+    lightbox.addEventListener(
+      "click",
+      (event) => {
+
+        if (
+          event.target ===
+          lightbox
+        ) {
+
+          closeLightbox();
+
+        }
+
       }
+    );
 
-      if (event.key === "ArrowRight") {
-        showImage(lightboxIndex + 1);
+
+    document.addEventListener(
+      "keydown",
+      (event) => {
+
+        if (
+          !lightbox.classList.contains(
+            "open"
+          )
+        ) {
+          return;
+        }
+
+
+        if (
+          event.key ===
+          "Escape"
+        ) {
+
+          closeLightbox();
+
+        }
+
+
+        if (
+          event.key ===
+          "ArrowLeft"
+        ) {
+
+          showLightboxImage(
+            lightboxIndex - 1
+          );
+
+        }
+
+
+        if (
+          event.key ===
+          "ArrowRight"
+        ) {
+
+          showLightboxImage(
+            lightboxIndex + 1
+          );
+
+        }
+
       }
-    });
+    );
 
-    function setupLightbox() {
-      const carousels = document.querySelectorAll(".image-carousel");
 
-      carousels.forEach(function (carousel) {
-        const images = Array.from(carousel.querySelectorAll("img"));
 
-        images.forEach(function (image, index) {
-          image.style.cursor = "pointer";
+    /* =========================================
+       BACK TO TOP
+    ========================================== */
 
-          image.addEventListener("click", function () {
-            const imageData = images.map(function (carouselImage) {
-              return {
-                src: carouselImage.src,
-                alt: carouselImage.alt
-              };
-            });
+    const backToTopButton =
+      document.getElementById(
+        "back-to-top"
+      );
 
-            openLightbox(imageData, index);
-          });
-        });
-      });
+
+    function updateBackToTop() {
+
+      backToTopButton.classList.toggle(
+
+        "show",
+
+        window.scrollY > 500
+
+      );
+
     }
 
-    setupLightbox();
+
+    window.addEventListener(
+      "scroll",
+      updateBackToTop,
+      {
+        passive: true
+      }
+    );
+
+
+    updateBackToTop();
+
   </script>
 
 </body>
+
 </html>
