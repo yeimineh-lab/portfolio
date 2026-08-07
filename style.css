@@ -2967,3 +2967,49 @@ button {
   }
 
 }
+
+/* =========================================
+   REDDRESSURSENE PLAY BUTTON
+========================================= */
+
+.project-title-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  margin-bottom: 9px;
+}
+
+.project-title-row h3 {
+  margin: 0;
+}
+
+.gameplay-button {
+  flex-shrink: 0;
+  min-height: 34px;
+  padding: 0 13px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  border: 1px solid rgba(128,104,255,.35);
+  border-radius: 999px;
+  background: rgba(128,104,255,.10);
+  color: var(--accent);
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform .18s ease, background .18s ease, border-color .18s ease, color .18s ease;
+}
+
+.gameplay-button:hover {
+  transform: translateY(-1px);
+  background: var(--accent);
+  border-color: var(--accent);
+  color: white;
+}
+
+.play-icon {
+  font-size: 10px;
+  line-height: 1;
+}
